@@ -1,0 +1,35 @@
+{
+    "cli": {
+      "version": ">= 3.0.0"
+    },
+    "build": {
+      "development": {
+        "distribution": "internal",
+        "android": {
+          "gradleCommand": "app:assembleRelease"
+        },
+        "ios": {
+          "buildConfiguration": "Debug"
+        }
+      },
+      "previewapk": {
+        "android": {
+          "buildType": "apk"
+        }
+      },
+      "production": {
+        "android": {
+          "buildType": "apk",
+          "channel": "production"
+        },
+        "ios": {
+          "channel": "production",
+          "image": "macos-monterey-12.4-xcode-13.4"
+        }
+      }
+    },
+    "submit": {
+      "production": {}
+    }
+  }
+  

@@ -1,0 +1,3 @@
+interface IContainer {
+    isLoading: boolean;
+}
